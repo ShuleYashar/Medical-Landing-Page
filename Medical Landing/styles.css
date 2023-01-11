@@ -1,0 +1,337 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration-line: none;
+}
+
+body {
+  background-image: url("DNA_hero.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+/*---navbar---*/
+.wrapper {
+  display: flex;
+  position: relative;
+}
+
+.wrapper .sidebar {
+  position: fixed;
+  width: 100px;
+  height: 100%;
+  background: rgb(12, 12, 84);
+  padding: 25px 0;
+}
+
+.wrapper .sidebar ul li {
+  margin-left: 28px;
+  margin-top: 35px;
+  color: rgb(86, 86, 194);
+}
+
+.wrapper .sidebar li i.fas.fa-home {
+  margin-top: 80px;
+}
+
+.wrapper .sidebar li i.fas.fa-phone {
+  margin-top: 200px;
+}
+
+.wrapper .sidebar ul li .fas {
+  width: 50px;
+  margin-left: 10px;
+}
+
+.wrapper .sidebar ul li .fas:hover {
+  color: white;
+}
+
+.fas.fa-home:hover:after {
+  content: attr(data-tooltip);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: small;
+  color: black;
+  background-color: white;
+
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  margin-left: 5px;
+  border-width: 6px;
+  border-style: dashed;
+  border-color: transparent transparent transparent rgb(86, 86, 194);
+  transition: 0.03ms;
+}
+
+.fas.fa-heart:hover:after {
+  content: attr(data-tooltip);
+
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: small;
+  color: black;
+  background-color: white;
+
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  margin-left: 5px;
+  border-width: 6px;
+  border-style: dashed;
+  border-color: transparent transparent transparent rgb(86, 86, 194);
+  transition: 0.03ms;
+}
+
+.fas.fa-plus:hover:after {
+  content: attr(data-tooltip);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: small;
+  color: black;
+  background-color: white;
+
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  margin-left: 5px;
+  border-width: 6px;
+  border-style: dashed;
+  border-color: transparent transparent transparent rgb(86, 86, 194);
+  transition: 0.03ms;
+}
+
+.fas.fa-user:hover:after {
+  content: attr(data-tooltip);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: small;
+  color: black;
+  background-color: white;
+
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  margin-left: 5px;
+  border-width: 6px;
+  border-style: dashed;
+  border-color: transparent transparent transparent rgb(86, 86, 194);
+  transition: 0.03ms;
+}
+
+.fas.fa-phone:hover:after {
+  content: attr(data-tooltip);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: small;
+  color: black;
+  background-color: white;
+
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  margin-left: 5px;
+  border-width: 6px;
+  border-style: dashed;
+  border-color: transparent transparent transparent rgb(86, 86, 194);
+  transition: 0.03ms;
+}
+
+.fas.fa-cog:hover:after {
+  content: attr(data-tooltip);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: small;
+  color: black;
+  background-color: white;
+
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  margin-left: 5px;
+  border-width: 6px;
+  border-style: dashed;
+  border-color: transparent transparent transparent rgb(86, 86, 194);
+  transition: 0.03ms;
+}
+/*----header----*/
+.upper {
+  display: inline;
+  margin-top: 3%;
+}
+
+.upper h1 {
+  margin-left: 13%;
+  display: inline;
+  color: rgb(4, 4, 76);
+  font-size: 1.5em;
+  font-family: sans-serif;
+}
+
+.upper h1:hover {
+  color: aqua;
+}
+
+.upper h1.point {
+  margin: 0%;
+  color: aqua;
+}
+
+.upper ul {
+  margin-left: 16%;
+  display: inline;
+}
+
+.upper ul li {
+  width: 25px;
+  text-align: match-parent;
+  display: inline;
+  margin-left: 2%;
+  color: rgb(3, 3, 242);
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  vertical-align: left;
+}
+
+.upper ul li a:after {
+  background-color: rgb(89, 99, 99);
+  bottom: -10px;
+  height: 3px;
+  width: 0;
+  left: 0;
+  transition: 0.3s;
+}
+.upper ul li a:hover {
+  color: aqua;
+}
+
+.upper ul li i.fas.fa-search {
+  margin-left: 15%;
+  color: black;
+}
+
+.upper ul li.searching:hover {
+  background-color: rgba(47, 213, 213, 0.079);
+  border: 50px;
+  border-radius: 5px;
+}
+.btn {
+  margin-left: 1%;
+  margin-top: 2%;
+  margin-right: 1%;
+  background-color: #f568688a;
+  border: none;
+  border-radius: 8px;
+  color: rgb(255, 255, 255);
+  padding: 15px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+/*-------text---------*/
+
+p.thefirst {
+  font-size: 15px;
+  font-family: sans-serif;
+  margin-top: 7%;
+  margin-left: 15%;
+  color: rgba(0, 255, 255, 0.612);
+  padding-left: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+p.thesecond {
+  margin-top: 1%;
+  margin-left: 15%;
+  font-size: 50px;
+  color: rgba(5, 2, 55, 0.819);
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+p.thethird {
+  margin-top: 2%;
+  margin-left: 15%;
+  color: rgb(5, 2, 55);
+  padding-right: 1px;
+  font-family: sans-serif;
+  display: inline-block;
+}
+
+#copyrights {
+  display: inline;
+  padding: 10px 2px;
+  writing-mode: vertical-rl;
+  float: right;
+  margin-bottom: 10%;
+  margin-right: 2%;
+  text-align: center;
+  font-size: x-small;
+  rotate: 180deg;
+}
+
+/*----button-----*/
+.makea {
+  margin-left: 15%;
+  background-color: #f568688a; /* Green */
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  margin-top: 4%;
+}
+
+button:hover {
+  background-color: rgb(243, 10, 10);
+}
+
+/*search*/
+
+/*boxes*/
+.box1 {
+  margin-top: 9%;
+  margin-left: 15%;
+  padding: 38.1px 35px 43px 35px;
+  background-color: #2925f9d4;
+  border-color: #2925f9d4;
+  border-radius: 0px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: white;
+}
+
+.box2 {
+  margin-top: 9%;
+  margin-left: -5px;
+  padding: 38.1px 35px 43px 35px;
+  background-color: rgb(33, 33, 177);
+  border-color: rgb(33, 33, 177);
+  border-radius: 0px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: white;
+}
+
+.box1 i.fas.fa-stethoscope {
+  display: block;
+  color: aqua;
+  font-size: 40px;
+  margin-bottom: 13%;
+}
+
+.box2 i.fas.fa-heartbeat {
+  display: block;
+  color: aqua;
+  font-size: 40px;
+  margin-bottom: 13%;
+}
